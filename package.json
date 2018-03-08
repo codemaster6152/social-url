@@ -10,7 +10,8 @@
     "test": "npm run lint && npm run mocha",
     "mocha": "nyc mocha -R spec ./test",
     "watch:mocha": "npm run mocha -- -w",
-    "lint": "semistandard --verbose | snazzy"
+    "lint": "semistandard --verbose | snazzy",
+    "version": "echo $npm_package_version"
   },
   "repository": {
     "type": "git",
