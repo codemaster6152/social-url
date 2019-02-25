@@ -2,8 +2,8 @@
 
 /* globals it, describe */
 
-var socialUrl = require('..');
-var assert = require('assert');
+const socialUrl = require('..');
+const assert = require('assert');
 
 describe('socialUrl', function () {
   it('doesn\'t fail on null input', function () {

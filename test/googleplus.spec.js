@@ -2,13 +2,13 @@
 
 /* globals describe, it */
 
-var socialUrl = require('..');
-var assert = require('assert');
-var assertUtil = require('./assertUtil');
+const socialUrl = require('..');
+const assert = require('assert');
+const assertUtil = require('./assertUtil');
 
 describe('google plus', function () {
   it('doesn\'t parse non google+ urls', function () {
-    var plus = socialUrl.parse('https://not-plus.google.com/103419843882610272894?test=1');
+    const plus = socialUrl.parse('https://not-plus.google.com/103419843882610272894?test=1');
     assert.notStrictEqual(plus.network, 'Google+');
   });
 

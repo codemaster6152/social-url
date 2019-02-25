@@ -2,7 +2,7 @@
 
 /* globals describe */
 
-var assertUtil = require('./assertUtil');
+const assertUtil = require('./assertUtil');
 
 describe('soundcloud', function () {
   function testSoundCloud (url, user, expectedUrl) {

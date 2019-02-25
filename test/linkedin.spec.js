@@ -2,7 +2,7 @@
 
 /* globals describe */
 
-var assertUtil = require('./assertUtil');
+const assertUtil = require('./assertUtil');
 
 describe('linkedin', function () {
   function testLinkedIn (url, user, expectedUrl) {
