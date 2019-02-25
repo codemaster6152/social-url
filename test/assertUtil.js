@@ -2,8 +2,8 @@
 
 /* globals it */
 
-var socialUrl = require('..');
-var assert = require('assert');
+const socialUrl = require('..');
+const assert = require('assert');
 
 function testNotNetwork (url, network) {
   it('shouldn\'t categorize "' + url + '" as "' + network + '"', function () {
