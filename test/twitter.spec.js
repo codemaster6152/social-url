@@ -21,5 +21,10 @@ describe('twitter', function () {
   testTwitter(' https://twitter.com/hocuto_srbija', 'hocuto_srbija', 'https://twitter.com/hocuto_srbija');
   testTwitter('https://twitter.com/#!/DalbarInc', 'dalbarinc');
 
+  testTwitter('https://twitter.com/hashtag/dbaas?src=hash', null);
+  testTwitter('https://twitter.com/search?q=hello&src=typd', null);
+  testTwitter('https://www.twitter.com/hashtag/dbaas?src=hash', null);
+  testTwitter('https://www.twitter.com/search?q=hello&src=typd', null);
+
   assertUtil.testNotNetwork('https://not-twitter.com/woorank', 'Twitter');
 });

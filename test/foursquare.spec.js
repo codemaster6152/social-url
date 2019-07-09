@@ -18,5 +18,7 @@ describe('foursquare', function () {
   testFoursquare('foursquare.com/v/412d2800f964a520df0c1fe3', '412d2800f964a520df0c1fe3', 'https://foursquare.com/v/412d2800f964a520df0c1fe3');
   testFoursquare('https://foursquare.com/serveratwork', 'serveratwork');
 
+  testFoursquare('https://foursquare.com/explore?cat=topPicks&mode=url&near=Lake%20Charles%2C%20LA%2C%20United%20States&nearGeoId=72057594042258172', null);
+
   assertUtil.testNotNetwork('https://not-foursquare.com/v/412d2800f964a520df0c1fe3', 'Foursquare');
 });

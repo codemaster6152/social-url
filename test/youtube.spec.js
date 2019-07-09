@@ -39,6 +39,8 @@ describe('youtube', function () {
   testYouTube('https://www.youtube.com/user/@my_page_id', null);
   testYouTube('https://www.youtube.com/user/my_page_id/videos', 'my_page_id');
 
+  testYouTube('https://www.youtube.com/watch?v=rK9gV1phuEI', null);
+
   assertUtil.testNotNetwork('example.com', 'YouTube');
   assertUtil.testNotNetwork('https://example.com/page_id', 'YouTube');
   assertUtil.testNotNetwork('https://www.example.com/youtube/my_page_id', 'YouTube');
