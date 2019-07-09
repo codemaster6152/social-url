@@ -25,6 +25,9 @@ describe('instagram', function () {
   testInstagram('https://www.instagram.com/my_page_id/following', 'my_page_id');
   testInstagram('https://www.instagram.com/my.page.id/', 'my.page.id');
 
+  testInstagram('https://www.instagram.com/p/BwHmNUxhIyM/', null);
+  testInstagram('https://www.instagram.com/explore/tags/hello/', null);
+
   assertUtil.testNotNetwork('example.com', 'Instagram');
   assertUtil.testNotNetwork('https://example.com/page_id', 'Instagram');
   assertUtil.testNotNetwork('https://www.example.com/instagram/my_page_id', 'Instagram');

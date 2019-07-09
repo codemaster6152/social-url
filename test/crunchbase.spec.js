@@ -38,6 +38,11 @@ describe('crunchbase', function () {
   testCrunchbase('http://www.crunchbase.com/organization/woorank#section-overview', 'woorank');
   testCrunchbase('http://crunchbase.com/organization/woorank#section-overview', 'woorank');
 
+  testCrunchbase('https://www.crunchbase.com/organizations/woorank#section-overview', 'woorank');
+  testCrunchbase('https://crunchbase.com/organizations/woorank#section-overview', 'woorank');
+  testCrunchbase('http://www.crunchbase.com/organizations/woorank#section-overview', 'woorank');
+  testCrunchbase('http://crunchbase.com/organizations/woorank#section-overview', 'woorank');
+
   testCrunchbase('https://www.crunchbase.com/woorank/', null);
   testCrunchbase('https://crunchbase.com/woorank/', null);
   testCrunchbase('http://www.crunchbase.com/woorank/', null);
