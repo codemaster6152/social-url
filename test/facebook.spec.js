@@ -26,6 +26,7 @@ describe('facebook', function () {
   testFacebook('https://www.facebook.com/Rehabilitación-España-333019166875998/timeline/', '333019166875998');
   testFacebook(' https://www.facebook.com/hocuto.pokloni', 'hocuto.pokloni', 'https://www.facebook.com/hocuto.pokloni');
   testFacebook('https://www.facebook.com/Drain247', 'Drain247');
+  testFacebook('https://www.facebook.com/profile.php?id=458438921555347&amp;amp;ref=content_filter', '458438921555347');
 
   assertUtil.testNotNetwork('example.com', 'Facebook');
   assertUtil.testNotNetwork('https://example.com/page_id', 'Facebook');
